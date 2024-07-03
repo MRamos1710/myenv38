@@ -23,4 +23,7 @@ urlpatterns = [
     path('s1_cotizacion/', s1_cotizacion, name='s1_cotizacion'),
     path('s2_emisor/', s2_emisor, name='s2_emisor'),
     path('s3_encomienda/', s3_encomienda, name='s3_encomienda'),
+    path('s5_destinatario/', s5_destinatario, name='s5_destinatario'),
+    path('s6_registro_encomienda/', s6_registro_encomienda, name='s6_registro_encomienda'),
+
 ]
