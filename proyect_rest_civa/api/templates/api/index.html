@@ -1,0 +1,20 @@
+<!-- api/templates/api/index.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Listado de Servicios</title>
+</head>
+
+<body>
+    <h1>Listado de Servicios</h1>
+    <ul>
+        <li><a href="{% url 'servicio' numero=1 %}">Emisión de Cotización</a></li>
+        <li><a href="{% url 'servicio' numero=2 %}">Registro del Emisor</a></li>
+        <!-- Añadir más servicios según sea necesario -->
+    </ul>
+</body>
+
+</html>

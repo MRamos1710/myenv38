@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Servicio X</title>
+</head>
+
+<body>
+    <h1>Servicio X</h1>
+    <div id="response">
+        <!-- Aquí se imprimirá la respuesta del servicio -->
+    </div>
+
+    <!-- Script para hacer la solicitud al servicio -->
+    <script>
+        // Hacer la solicitud al servicio y mostrar la respuesta
+        fetch('http://localhost:8081/servicioX') // Reemplaza con la URL real del servicio
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('response').innerText = JSON.stringify(data, null, 2);
+            })
+            .catch(error => {
+                console.error('Error al obtener la respuesta del servicio:', error);
+                document.getElementById('response').innerText = 'Error al obtener la respuesta del servicio.';
+            });
+    </script>
+</body>
+
+</html>
